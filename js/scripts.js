@@ -1,4 +1,4 @@
-var options = ["Mexican","Coney","Gulianos","Sushi","Thai","Cheap Pizza","Good Pizza","BBQ","Deli Sub","Philly","Gyros","Street Food","Shwarma"];
+var options = ["Mexican","Coney","Gulianos","Sushi","Thai","Cheap Pizza","Good Pizza","BBQ","Deli Sub","Philly","Gyros","Street Food","Shwarma","Bahn Mi","Ramen","Pasties","Burgers"];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -51,7 +51,7 @@ function drawRouletteWheel() {
 
     ctx.clearRect(0,0,500,500);
 
-    ctx.font = 'bold 20px Kanit, Sans Serif';
+    ctx.font = 'bold 16px Kanit, Sans Serif';
 
     for(var i = 0; i < options.length; i++) {
       var angle = startAngle + i * arc;
